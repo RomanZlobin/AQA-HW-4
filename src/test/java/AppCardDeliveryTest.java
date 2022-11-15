@@ -27,6 +27,8 @@ public class AppCardDeliveryTest {
         $("[data-test-id='city'] .input__control").setValue("Новосибирск");
         $("[data-test-id='date'] .input__control").sendKeys(Keys.CONTROL + "A");
         $("[data-test-id='date'] .input__control").sendKeys(Keys.BACK_SPACE);
+        $("[data-test-id='date'] .input__control").sendKeys(Keys.COMMAND + "A");
+        $("[data-test-id='date'] .input__control").sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] .input__control").setValue(expectedDate);
         $("[data-test-id='name'] .input__control").setValue("Николай Римский-Корсаков");
         $("[data-test-id='phone'] .input__control").setValue("+79529991111");
